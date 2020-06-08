@@ -9,7 +9,7 @@ public class GermanStyleDateChecker {
                                 "((19|20)?\\d\\d)$";
     private static Pattern pattern=Pattern.compile(regex);
 
-    public static Matcher getMatcher(String usCurrencyString) {
-        return pattern.matcher(usCurrencyString);
+    public static Matcher getMatcher(String dateString) {
+        return pattern.matcher(dateString);
     }
 }
